@@ -67,6 +67,19 @@ const loadNews = async (cid) => {
     })
 
 }
+
+
+// input fled 
+const hanglear = () => {
+  const value = document.getElementById('valueInput').value
+  // console.log('hi',value)
+  if(value){
+    loadNews(value)
+  }
+  else{
+    alert('places enter a vlide number')
+  }
+}
  
 loadNews('01');
 newsPortal();
